@@ -100,10 +100,10 @@ prompt([
 // push data from api into this markdown function (md for readme)
 function generateMarkdown({responses, data}) {
     return `
-# ${responses.title}
+## ${responses.title}
 ## Description
 > ${responses.description}
-# Table of Contents
+## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
@@ -126,7 +126,7 @@ function generateMarkdown({responses, data}) {
 
 ![profilepic](https://avatars1.githubusercontent.com/u/62491401?v=4 "acerjak")
 ***
-##### Created by acerjak 2020
+#### Created by acerjak May 2020
  `;
     }
 
