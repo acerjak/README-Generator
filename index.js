@@ -113,22 +113,20 @@ function generateMarkdown({responses, data}) {
 ***
 ## Installation
 #### Please follow this command to install npm dependencies:
-##### ${responses.installation}
+> ${responses.installation}
 ## Usage
 #### ${responses.usage}
 ## Credits
 > ${responses.contributing}
-***
 ## License
 #### ${responses.license}
-***
 ## Tests
-##### ${responses.test}
+> ${responses.test}
 ## Questions
-> Please send any inquiries or concerns through ![${responses.username}]("https://api.github.com/users/${responses.username}") at ${responses.email}.
+> Please send any inquiries or concerns through [${responses.username}](https://api.github.com/users/${responses.username} "GitHub Profile") or at ${responses.email}.
 ![profilepic](https://avatars1.githubusercontent.com/u/62491401?v=4 "acerjak")
 ***
-> Created by Amanda Cerjak 2020
+> Created by acerjak 2020
  `;
     }
 
