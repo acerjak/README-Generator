@@ -20,3 +20,13 @@ const api = {
   }}}
 
 // module.exports = api;
+
+
+https://api.github.com/search/repositories?q=user:${responses.username}
+
+// Description
+// Brief quiz of 5 questions that is sorted randomly. The user is timed and the remaining time becomes the score. Scoreboard is locally stored.
+// Usage
+// Press Start to begin quiz and at the end, log your score on the score board.
+// Credit
+//Web Dev Simplified, Google-fu, and I contributed to this project. The user can submit additional questions to be added to the quiz, only web development for now please!
