@@ -4,7 +4,7 @@
 
     ## Description
     ---------------------------------------
-    Brief quiz of 5 questions that is sorted randomly. The user is timed and the remaining time becomes the score. Scoreboard is locally stored.
+    Brief quiz of 5 questions that is sorted randomly. 
 
     ## Table of Contents
     ---------------------------------------
@@ -14,7 +14,7 @@
 
     * [License](#license)
 
-    * [Contributin](#contributing)
+    * [Contributing](#contributing)
 
     * [Tests](#tests)
 
@@ -27,11 +27,11 @@
 
     ## Usage
     ---------------------------------------
-    Press Start to begin quiz and at the end, log your score on the score board.
+    Press Start to begin quiz and at the end, log your score on the score board, which is based on time remaining.
 
     ## Credits
     ---------------------------------------
-    Web Dev Simplified, Google-fu, and I contributed to this project. The user can submit additional questions to be added to the quiz, only web development for now please!
+    Google-fu, Web Dev Simplified, and I
 
     ## License
     ---------------------------------------
@@ -43,9 +43,9 @@
 
     ## Questions
     ---------------------------------------
-    <img src="https://api.github.com/users/acerjak" alt="profile pic">
+    ![profile pic](https://avatars1.githubusercontent.com/u/62491401?v=4 "acerjak")
     
-    Please send any inquiries or concerns through [acerjak]("https://api.github.com/users/acerjak") at amandacerjak@gmail.com.
+    Please send any inquiries or concerns through ![acerjak]("https://api.github.com/users/acerjak") at amandacerjak@gmail.com.
     ---------------------------------------
     Created by Amanda 2020
      
