@@ -115,7 +115,7 @@ function generateMarkdown({responses, data}) {
 
     * [License](#license)
 
-    * [Contributin](#contributing)
+    * [Contributing](#contributing)
 
     * [Tests](#tests)
 
@@ -144,9 +144,9 @@ function generateMarkdown({responses, data}) {
 
     ## Questions
     ---------------------------------------
-    <img src="https://api.github.com/users/${responses.username}" alt="profile pic">
+    ![profile pic](https://avatars1.githubusercontent.com/u/62491401?v=4 "acerjak")
     
-    Please send any inquiries or concerns through [${responses.username}]("https://api.github.com/users/${responses.username}") at ${responses.email}.
+    Please send any inquiries or concerns through ![${responses.username}]("https://api.github.com/users/${responses.username}") at ${responses.email}.
     ---------------------------------------
     Created by Amanda 2020
      `;
