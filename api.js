@@ -25,8 +25,7 @@ const api = {
 https://api.github.com/search/repositories?q=user:${responses.username}
 
 // Description
-// Brief quiz of 5 questions that is sorted randomly. 
-The user is timed and the remaining time becomes the score. Scoreboard is locally stored.
+// Brief quiz of 5 questions that is sorted randomly. The user is timed and the remaining time becomes the score. Scoreboard is locally stored.
 // Usage
 // Press Start to begin quiz and at the end, log your score on the score board.
 // Credit
