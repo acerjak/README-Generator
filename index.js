@@ -101,12 +101,9 @@ prompt([
 function generateMarkdown({responses, data}) {
     return `
 # ${responses.title}
-***
 ## Description
-> ### ${responses.description}
-***
+> ${responses.description}
 # Table of Contents
-***
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
@@ -115,30 +112,21 @@ function generateMarkdown({responses, data}) {
 * [Questions](#questions)
 ***
 ## Installation
-***
-### Please follow this command to install npm dependencies:
-### ${responses.installation}
-***
+#### Please follow this command to install npm dependencies:
+##### ${responses.installation}
 ## Usage
-### ${responses.usage}
-***
+#### ${responses.usage}
 ## Credits
-***
-### ${responses.contributing}
+> ${responses.contributing}
 ***
 ## License
-***
-### ${responses.license}
+#### ${responses.license}
 ***
 ## Tests
-***
-### ${responses.test}
-***
-#Questions
-***
-![profilepic](https://avatars1.githubusercontent.com/u/62491401?v=4 "acerjak")
-***
+##### ${responses.test}
+## Questions
 > Please send any inquiries or concerns through ![${responses.username}]("https://api.github.com/users/${responses.username}") at ${responses.email}.
+![profilepic](https://avatars1.githubusercontent.com/u/62491401?v=4 "acerjak")
 ***
 > Created by Amanda Cerjak 2020
  `;
