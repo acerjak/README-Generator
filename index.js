@@ -1,4 +1,4 @@
-const { prompt, Separator } = require( 'inquirer')
+const { prompt} = require( 'inquirer')
 const { writeFile } = require('fs')
 const { promisify } = require('util')
 //bring in axios
@@ -40,7 +40,6 @@ prompt([
     name: 'license',
     message: 'Did you use any licenses?',
     choices: [
-        new Separator(),
         {
             name: 'Mozilla Public License V 2.0',
         },
@@ -85,7 +84,7 @@ prompt([
         //using for in loop over object, take key=name from question
         // for(const key in responses) {
             //plug into API request
-            axios.get(`https://api.github.com/search/repositories?q=user:${responses.username}`)
+            axios.get(`https://api.github.com/users/${responses.username}`)
             //extract the data without having to call it data.data
             .then(({data}) => {
                 console.log(responses, data)
@@ -122,9 +121,9 @@ function generateMarkdown({responses, data}) {
 ## Tests
 > ${responses.test}
 ## Questions
-> Please send any inquiries or concerns through [${responses.username}](https://api.github.com/users/${responses.username} "GitHub Profile") or at ${responses.email}.
+> Please send any inquiries or concerns through [${data.login}](${data.url} "GitHub Profile") or at ${responses.email}.
 
-![profilepic](https://avatars1.githubusercontent.com/u/62491401?v=4 "acerjak")
+![profilepic](${data.avatar_url} "acerjak")
 ***
 #### Created by acerjak May 2020
  `;
